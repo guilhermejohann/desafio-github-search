@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.MainActivity">
 
     <TextView
@@ -21,13 +22,22 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:ems="10"
         android:hint="@string/nome_usuario"
-        android:inputType="numberDecimal"
-        android:maxLength="10"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_titulo" />
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_salvar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/salvar"
+        app:layout_constraintEnd_toEndOf="@id/et_nome_usuario"
+        app:layout_constraintStart_toStartOf="@id/et_nome_usuario"
+        app:layout_constraintTop_toBottomOf="@id/et_nome_usuario" />
 
     <Button
         android:id="@+id/btn_confirmar"
@@ -35,9 +45,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="@string/confirmar"
-        app:layout_constraintEnd_toEndOf="@id/et_nome_usuario"
-        app:layout_constraintStart_toStartOf="@id/et_nome_usuario"
-        app:layout_constraintTop_toBottomOf="@id/et_nome_usuario" />
+        app:layout_constraintEnd_toEndOf="@id/btn_salvar"
+        app:layout_constraintStart_toStartOf="@id/btn_salvar"
+        app:layout_constraintTop_toBottomOf="@id/btn_salvar" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_lista_repositories"

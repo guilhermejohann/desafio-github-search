@@ -2,4 +2,8 @@
     <string name="app_name">GitHubSearch</string>
     <string name="nome_usuario">Nome do usuário</string>
     <string name="confirmar">Confirmar</string>
+    <string name="salvar">Salvar</string>
+    <string name="saved_campo">saved_campo</string>
+    <string name="response_error">Não foi possível obter os dados do GitHub!</string>
+    <string name="link">link</string>
 </resources>
